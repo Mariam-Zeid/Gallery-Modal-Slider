@@ -1,0 +1,44 @@
+h1 {
+  color: palevioletred;
+}
+
+.item,
+.innerBox i {
+  cursor: pointer;
+}
+
+.item .layer {
+  position: absolute;
+  bottom: -50%;
+  left: 15px;
+  right: 15px;
+  background-color: #fff;
+  text-align: center;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.item:hover .layer {
+  bottom: 15px;
+  opacity: 1;
+}
+
+#boxContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBox {
+  width: 50%;
+  height: 500px;
+  background-image: url(../images/img-2.jpg);
+  background-size: cover;
+  /* background-position: center; */
+}
